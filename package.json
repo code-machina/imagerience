@@ -1,0 +1,44 @@
+{
+  "name": "imagerience",
+  "version": "1.0.0",
+  "description": "Image Upload middleware for express.js",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --plugin markdown --ext js,md .",
+    "test": "mocha --check-leaks --reporter spec --bail",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot",
+    "test-travis": " istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-machina/DeFastestImgExpress.git"
+  },
+  "keywords": [],
+  "author": "Code Machina <gbkim1988@gmail.com> (https://github.com/code-machina/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-machina/DeFastestImgExpress/issues"
+  },
+  "homepage": "https://github.com/code-machina/DeFastestImgExpress#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mongoose": "^5.4.18",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {
+    "after": "^0.8.2",
+    "eslint": "5.9.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-markdown": "1.0.0-rc.0",
+    "eslint-plugin-node": "7.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "express": "^4.16.4",
+    "istanbul": "0.4.5",
+    "mocha": "^6.0.2",
+    "mz": "^2.7.0",
+    "nyc": "^13.3.0",
+    "supertest": "^4.0.0"
+  }
+}
